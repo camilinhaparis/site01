@@ -12,6 +12,7 @@
 </head>   
    
 <body>
+  
   <!-----------CABEÇÁRIO------>
   <section id="topo">  
   <?php include "head/cabecalho.php"; ?>
