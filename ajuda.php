@@ -17,6 +17,11 @@
   <?php include "head/cabecalho.php"; ?>
   </section>
 
+    <!----ACESSIBILIDADE----->
+    <section >  
+<?php include "acessibilidade.php"; ?>
+</section>
+
 <section id="corpo">  
 <main>
 

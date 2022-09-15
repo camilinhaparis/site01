@@ -28,6 +28,10 @@ $con = mysqli_query($link, $consulta);
 <?php include "head/cabecalho.php"; ?>
 </section>
 
+<section >  
+<?php include "acessibilidade.php"; ?>
+</section>
+
 <main>
 	<div class="container ">
 		<table class="table table-striped mt-5">

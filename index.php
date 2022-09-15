@@ -21,6 +21,11 @@ include "connect.php";
 <?php include "head/cabecalho.php"; ?>
 </section>
 
+  <!----ACESSIBILIDADE----->
+  <section >  
+<?php include "acessibilidade.php"; ?>
+</section>
+
 <section id="corpo">  
 <!----------slide principal----->
 <main>
@@ -52,7 +57,7 @@ include "connect.php";
             <span class="visually-hidden">Next</span>
         </button>
         </div>           
-  
+
 
       <!-------Profissionais--->
       
