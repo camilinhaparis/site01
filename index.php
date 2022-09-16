@@ -23,8 +23,8 @@ include "connect.php";
 
   <!----ACESSIBILIDADE----->
   <section >  
-<?php include "acessibilidade.php"; ?>
-</section>
+      <?php include "body/acessibilidade.php"; ?>
+  </section>
 
 <section id="corpo">  
 <!----------slide principal----->

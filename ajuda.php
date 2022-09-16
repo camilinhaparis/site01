@@ -2,14 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
     <title>Ajudai</title>
     <link rel="stylesheet" href="css/main.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>   
+  </head>   
    
 <body>
   
@@ -20,8 +16,8 @@
 
     <!----ACESSIBILIDADE----->
     <section >  
-<?php include "acessibilidade.php"; ?>
-</section>
+      <?php include "body/acessibilidade.php"; ?>
+    </section>
 
 <section id="corpo">  
 <main>
@@ -39,7 +35,7 @@
             <br>
         <img src="./img/login.png " height="230" width="330" style="display: block; margin: 0 auto;" />
           <div class="card-body">
-            <h5 class="card-title">1º Passo: crique em entrar</h5>
+            <h5 class="card-title">1º Passo: clique em entrar</h5>
             <p class="card-text">Em segundos você cria sua conta.</p>      
           </div>
         </div>

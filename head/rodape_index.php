@@ -8,6 +8,6 @@
             <li class="nav-item"><a href="ajuda.php" class="nav-link px-2 text-muted">Ajuda</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">LGPD</a></li>
           </ul>
-          <p class="text-center text-muted">&copy; 2021 Ajudaí</p>
+          <p class="text-center text-muted">&copy; 2021–2022 Ajudaí</p>
     </div>    
 </footer>

@@ -33,7 +33,4 @@ if($perfil_log != "perfil.png" && $capa_log != "capa.png"){
 }
 
 
-
-
-
 ?>

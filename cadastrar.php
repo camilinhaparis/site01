@@ -2,6 +2,7 @@
 //arquivo de conexão com o banco de dado
 include "connect.php";
 $nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
 $atividade = $_POST['atividade'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
@@ -18,7 +19,7 @@ $perfil = $_FILES['perfil'] ['name'];
 $perfil_tipo = $_FILES['perfil']['type'];
 
 //verificar se é possível cadastrar
-if($nome != "" && $atividade !="" && $email !="" && $senha !="" && $dica !="" && $telefone !="" && $endereco !="" && $capa !="" && $perfil !=""){
+if($nome != "" && $sobrenome != "" && $atividade !="" && $email !="" && $senha !="" && $dica !="" && $telefone !="" && $endereco !="" && $capa !="" && $perfil !=""){
    $cadastrar = true;    
 }else{
     echo "Não pode deixar os campos vazios<br>";
@@ -60,8 +61,8 @@ echo "Tipo de arquivo da perfil:" .$perfil_tipo."<br>";
 
 //nome da variáveis para ser inserido no banco de dado
 if($cadastrar){
-    $sql = "INSERT into tb_user(nome, atividade, email, senha, dica, telefone, endereco, perfil, capa) VALUES 
-    ('$nome','$atividade','$email','$senha','$dica','$telefone','$endereco','$perfil','$capa');";
+    $sql = "INSERT into tb_user(nome, sobrenome, atividade, email, senha, dica, telefone, endereco, perfil, capa) VALUES 
+    ('$nome','$sobrenome','$atividade','$email','$senha','$dica','$telefone','$endereco','$perfil','$capa');";
     mysqli_query($link,$sql); 
     //echo "<a href='perfil.php'>Ir para a tela de login</a><br>";
     //serve para cadastrar os dados do formulario no banco de dado

@@ -13,8 +13,13 @@ include "verifica_login.php";
 </head>   
    
 <body>
+   <!----ACESSIBILIDADE----->
+    <section >  
+      <?php include "body/acessibilidade.php"; ?>
+    </section>
+
   <!-----------CABEÇÁRIO------>
-<section id="principal">    
+  <section id="principal">    
     <section id="topo" style="background-image:url(<?php echo "users/$email_log/$capa_log"; ?>);background-size:cover;">  
     <?php include "topo.php"; ?>
     </section>
@@ -26,7 +31,7 @@ include "verifica_login.php";
 
     <!-----------rodapé----------->
     <section id="rodape">  
-    <?php include "rodape.php"; ?>
+    <?php include "head/rodape.php"; ?>
     </section>
 </section>      
 </body>

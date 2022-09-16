@@ -21,9 +21,9 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
   </head>
   <body class="text-center">
     <!----ACESSIBILIDADE----->
-  <section >  
-<?php include "acessibilidade.php"; ?>
-</section>
+    <section >  
+      <?php include "body/acessibilidade.php"; ?>
+    </section>
     
 <main class="form-signin w-100 m-auto">
   

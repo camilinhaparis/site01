@@ -10,10 +10,11 @@
   </head>   
    
   <body class="bg-light">
+
     <!----ACESSIBILIDADE----->
-  <section >  
-<?php include "acessibilidade.php"; ?>
-</section>
+    <section >  
+      <?php include "body/acessibilidade.php"; ?>
+    </section>
 
     <div class="container">
 
@@ -28,35 +29,58 @@
             
             
                   <form action="cadastrar.php" method="post" enctype="multipart/form-data">
-                    <div >
-                      <label>Nome:* </label>
-                      <input type="text" name="nome" placeholder="Digite o seu nome completo" class="form-control" required><br>
-                    </div>
+   
+             <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label">Nome:* </label>
+              <input type="text" name="nome" placeholder="Digite o seu nome completo" class="form-control" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label class="form-label">Sobrenome:* </label>
+              <input type="text" name="sobrenome" placeholder="Digite o seu sobrenome" class="form-control" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+            
+
 
                     <div class="col-12">
                       <label class="form-label">Atividade:*</label>
-                      <input type="text" name="atividade" placeholder="Digite sua atividade" class="form-control" required><br>
+                      <input type="text" name="atividade" placeholder="Digite sua atividade" class="form-control" required>
                     </div>
                   
                     <div class="col-12">
                         <label class="form-label">E-mail:*</label>
-                        <input type="text" name="email" placeholder="Digite o e-mail" class="form-control" required><br>
+                        <input type="text" name="email" placeholder="Digite o e-mail" class="form-control" required>
                         <div class="invalid-feedback">
                               Please enter a valid email address for shipping updates.
                         </div>
                     </div>
 
+                    <div class="col-12">
                     <label class="form-label">Senha:*</label>
-                    <input type="password" name="senha" placeholder="Digite uma senha" class="form-control" required><br>
+                    <input type="password" name="senha" placeholder="Digite uma senha" class="form-control" required>
+                    </div>
 
+                    <div class="col-12">
                     <label class="form-label">Dica:*</label>
-                    <input type="text" name="dica" placeholder="Digite uma dica" class="form-control" required><br>
-
+                    <input type="text" name="dica" placeholder="Digite uma dica" class="form-control" required>
+                    </div>
+                    
+                    <div class="col-12">
                     <label class="form-label">Telefone:*</label>
-                    <input type="text" name="telefone" placeholder="Digite o seu telefone" class="form-control" required><br>
+                    <input type="text" name="telefone" placeholder="Digite o seu telefone" class="form-control" required>
+                    </div>
 
+                    <div class="col-12">
                     <label class="form-label">Endereco:*</label>
-                    <input type="text" name="endereco" placeholder="Digite o seu endereco" class="form-control" required><br>      
+                    <input type="text" name="endereco" placeholder="Digite o seu endereco" class="form-control" required>     
+                    </div>
 
                     <label class="form-label">Imagem da capa:*</label>
                     <input type="file" name="capa"  class="entradas_img" required><br>

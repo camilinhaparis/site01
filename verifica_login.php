@@ -13,6 +13,7 @@ if($l != "" && $s != ""){
     while ($d = mysqli_fetch_array ($dados)){
         $id_log = $d['id_user'];
         $nome_log = $d['nome'];
+        $sobrenome_log = $d['sobrenome'];
         $atividade_log = $d['atividade'];
         $email_log = $d['email'];
         $senha_log = $d['senha'];
