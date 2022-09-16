@@ -10,13 +10,17 @@
   </head>   
    
   <body class="bg-light">
+    <!----ACESSIBILIDADE----->
+  <section >  
+<?php include "acessibilidade.php"; ?>
+</section>
 
     <div class="container">
 
         <!-----------seção principal do site------>
       <section id="form"> 
               <div class="py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="img/Ajudai.png" >
+              <a href="index.php" class="classe1"><img src="img/Ajudai.png" /></a>
                 <h2>Cadastro do Cliente</h2>      
               </div>
 
@@ -74,7 +78,7 @@
                     </div>
                     <br>                    
 
-                    <label><input type="submit" value="CADASTRAR" class="w-100 btn btn-primary btn-lg"></label>
+                    <label><input type="submit" value="Cadastrar" class="w-100 btn btn-primary btn-lg"></label>
 
                     <hr class="my-4">
                     <div class="text-center">

@@ -20,6 +20,10 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
 
   </head>
   <body class="text-center">
+    <!----ACESSIBILIDADE----->
+  <section >  
+<?php include "acessibilidade.php"; ?>
+</section>
     
 <main class="form-signin w-100 m-auto">
   
@@ -48,9 +52,10 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
     </div>
     
     <input type="submit" value="Entrar" class="w-100 btn btn-lg btn-primary" >
-
+<br>
+<br>
     <p class=" mb-3 text-muted">Ainda não é inscrito <a href="cadastre.php"><b>Cadastre-se!</b></a></p>
-    <p class="mt-5 mb-3 text-muted">&copy; 2021–2022</p>
+    <p class="mt-5 mb-3 text-muted">&copy;2021–2022 Ajudaí</p>
   
 </main>
 
