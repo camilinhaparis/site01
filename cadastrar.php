@@ -74,7 +74,7 @@ if($cadastrar){
 
     header("location:user.php");
 
-}                
+}            
 
 
 

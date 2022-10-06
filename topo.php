@@ -1,5 +1,5 @@
 <header>
-    <h1><?php echo $nome_log; ?></h1>
+    <h1><?php echo "$nome_log  $sobrenome_log"; ?></h1>
 </header>
 
 <figure id="img_perfil">

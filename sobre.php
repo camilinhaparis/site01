@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ajudai</title>
-    <link rel="stylesheet" href="css/main.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>   
    
 <body>
@@ -18,23 +17,19 @@
   <?php include "body/acessibilidade.php"; ?>
 </section>
 
-<section id="corpo">  
-
-<main>
-  <br>
-<section id="sobre">    
-Ajudaí
-<br>
-Você é um encanador, eletrecista, carpinteiro...
-</section> 
-<br>
-<section id="sobre">    
-<embed src="video/video.mp4" autoplay="false" height="577" width="1024" 
+<div class="container text-center px-4 py-5" id="custom-cards">
+	<h2 style="color:#5aa2d8">Sobre o Ajudaí</h2>
+	<p class="lead text-muted ">Você é um encanador, eletrecista, carpinteiro...</p>
+	
+</div>
+	
+<div >
+<section >    
+		<embed src="video/video.mp4" autoplay="false" height="577" width="1024" 
           style="display: block; margin: 0 auto;" /> 
-</section> 
-      
-</main>
-</section>
+	</section>
+</div>
+<br>
 <br>
 <!-----------rodapé----------->
 <section id="rodape">  

@@ -2,9 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Ajudai</title>
-    <link rel="stylesheet" href="css/main.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Ajudai</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>   
    
 <body>
@@ -19,53 +18,54 @@
       <?php include "body/acessibilidade.php"; ?>
     </section>
 
-<section id="corpo">  
-<main>
+    <main>
 
-   <!-----------explicação cadastro----------->
-<div class="container px-4 py-5" id="custom-cards">
-  <h4 class="pb-2 text-center ">Como podemos te ajudar ?</h4>
-  <hr>
-  <br>
-  <section class="container">
-      <div class="row">
-          
-      <div class="card-group">
-        <div class="card">
-            <br>
-        <img src="./img/login.png " height="230" width="330" style="display: block; margin: 0 auto;" />
-          <div class="card-body">
-            <h5 class="card-title">1º Passo: clique em entrar</h5>
-            <p class="card-text">Em segundos você cria sua conta.</p>      
-          </div>
-        </div>
-          <!-------------->
-        <div class="card">
-            <br>
-        <img src="./img/cadastroperfil.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
-          <div class="card-body">
-            <h5 class="card-title">2º Passo: cadastre o seu serviço</h5>
-            <p class="card-text">Mantenha sempre atualizada sua conta para que seus clientes possam te encontrar.</p>
-            <!-------------->
-          </div>
-        </div>
-        <div class="card">
-            <br>
-        <img src="./img/negocie.png" height="230" width="330"  style="display: block; margin: 0 auto;"/>
-          <div class="card-body">
-            <h5 class="card-title">3º Passo: negocie direto</h5>
-            <p class="card-text">Faça bons negócios e fidelize seus clientes.</p>
-            
-          </div>
-        </div>
-    </div>
-      </div>
-
-  </section>
-
-      
-</main>
+<section class=" text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h2 style="color:#5aa2d8">Ajudaí</h2>
+      <p class="lead text-muted">Como podemos te ajudar?</p>
+     </div>
+  </div>
 </section>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="img/conta.png" class="py-4 card-img-top mx-auto d-block " style="width: 50%; height: 50% ">
+          <div class="card-body">
+            <h5><p class="card-text">1º Passo: clique em entrar</p></h5>
+            <p class="card-text">Em segundos você cria sua conta.</p>
+           <br>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+        <img src="img/cadastro.png" class="py-4 card-img-top mx-auto d-block " style="width: 50%; height: 50% ">
+
+          <div class="card-body">
+          <h5><p class="card-text">2º Passo: cadastre o seu serviço</p></h5>
+            <p class="card-text">Mantenha sempre atualizada sua conta.</p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="img/conta.png" class="py-4 card-img-top mx-auto d-block " style="width: 50%; height: 50% " >
+          <div class="card-body">
+          <h5><p class="card-text">3º Passo: negocie direto</p></h5>
+            <p class="card-text">Faça bons negócios e fidelize seus clientes.</p>
+           <br>
+          </div>
+        </div>
+      </div>
+</main>
+
 <br>
 <!-----------rodapé----------->
 <section id="rodape">  

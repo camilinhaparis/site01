@@ -1,40 +1,30 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">
+        <img src="img/Ajudai.png">
+        </a>
+    </div>
+    </nav>
 
- <nav class="navbar navbar-light bg-light">
+
+<header class="p-3 text-bg-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="img/Ajudai.png">
-    </a>
-  </div>
-</nav>
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">      
 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-          <a class="nav-link" href="index.php">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="profissionais.php">Profissionais</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link" href="sobre.php">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ajuda.php">Ajuda</a>
-        </li>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.php" class="nav-link px-2 text-white">Home</a></li>
+        <li><a href="profissionais.php" class="nav-link px-2 text-white">Profissionais</a></li>
+        <li><a href="sobre.php" class="nav-link px-2 text-white">Sobre</a></li>
+        <li><a href="ajuda.php" class="nav-link px-2 text-white">Ajuda</a></li>
+        <li><a href="contato.php" class="nav-link px-2 text-white">Contato</a></li>
       </ul>
-      <form class="d-flex">
-        
-        
-        <a href="login.php"><button type="button" class="btn btn-primary">ENTRAR</button></a>
-        <!----<a href="login.php"><button type="button" class="btn btn-primary pl-5 pr-5 m-1">Entrar</button></a>--->
-      </form>
+
+
+      <div class="text-end">
+      <a href="login.php"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+      <a href="cadastre.php"><button type="button" class="btn btn-primary me-2">Empresa</button></a>
+      <a href="#############"><button type="button" class="btn btn-primary">Cliente</button></a>
+      </div>
     </div>
   </div>
-</nav>
+</header>

@@ -28,30 +28,32 @@ $con = mysqli_query($link, $consulta);
       <?php include "body/acessibilidade.php"; ?>
     </section>
 
-<main>
-	<div class="container ">
-		<table class="table table-striped mt-5">
-			<thead class="thead-dark">
-				<tr>
-					<th>Nome</th>
-					<th>Atividade</th>
-					<th>Telefone</th>
-					<th>Perfil</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php while($dado = $con->fetch_array()){ ?>
-					<tr>
-						<td><?php echo $dado["nome"]; ?></td>
-						<td><?php echo $dado["atividade"]; ?></td>
-						<td><?php echo $dado["telefone"]; ?></td>
-						<td><a href="user.php?page=1">Perfil</a></td>
-					</tr>
-				<?php } ?>
-			</tbody>
-		</table>
+
+	<div class="container py-5 ">
+		<div >	
+			<table class="table table-striped mt-5">
+					<thead class="thead-dark">
+						<tr>
+							<th>Nome</th>
+							<th>Atividade</th>
+							<th>Telefone</th>
+							<th>Perfil</th>
+						</tr>
+					</thead>
+				<tbody>
+					<?php while($dado = $con->fetch_array()){ ?>
+						<tr>
+							<td><?php echo $dado["nome"]; ?></td>
+							<td><?php echo $dado["atividade"]; ?></td>
+							<td><?php echo $dado["telefone"]; ?></td>
+							<td><a href="user.php?page=1">Perfil</a></td>
+						</tr>
+					<?php } ?>
+				</tbody>
+			</table>
+		</div>
 	</div>
-</main>	
+	
 
 </body>
 </html>

@@ -12,6 +12,7 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
     <meta charset="utf-8">
     <title>Ajudai</title>
 
+   
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
@@ -45,15 +46,32 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
       <label>Password</label>
     </div>
 
-    <div class="checkbox mb-3">
+    <!--<div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div>
-    
+-->
     <input type="submit" value="Entrar" class="w-100 btn btn-lg btn-primary" >
 <br>
 <br>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+      <div id="g_id_onload"
+         data-client_id="443636915036-6ttpu8h2kv1pmn68e56qoebuj83orh26.apps.googleusercontent.com"
+         data-login_uri="http://localhost/site01/cadastre.php"
+         data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+
     <p class=" mb-3 text-muted">Ainda não é inscrito <a href="cadastre.php"><b>Cadastre-se!</b></a></p>
     <p class="mt-5 mb-3 text-muted">&copy;2021–2022 Ajudaí</p>
   
