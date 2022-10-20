@@ -1,15 +1,37 @@
 <?php
 //arquivo de conexão com o banco de dado
 include "connect.php";
-$nome = $_POST['nome'];
-$sobrenome = $_POST['sobrenome'];
-$atividade = $_POST['atividade'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$dica = $_POST['dica'];
-$telefone = $_POST['telefone'];
-$endereco = $_POST['endereco'];
-$cadastrar = false;
+
+    $nome = mysqli_real_escape_string($link, $_POST['nome']);
+	$sobrenome = mysqli_real_escape_string($link, $_POST['sobrenome']);
+    $email = mysqli_real_escape_string($link, $_POST['email']);
+	$senha = mysqli_real_escape_string($link, $_POST['senha']);
+	
+
+    $atividade = mysqli_real_escape_string($link, $_POST['atividade']);
+	$telefone = mysqli_real_escape_string($link, $_POST['telefone']);
+
+	$endereco = mysqli_real_escape_string($link, $_POST['endereco']);
+    $numero = mysqli_real_escape_string($link, $_POST['numero']);
+    $cep = mysqli_real_escape_string($link, $_POST['cep']);	
+	$bairro = mysqli_real_escape_string($link, $_POST['bairro']);
+	$cidade = mysqli_real_escape_string($link, $_POST['cidade']);
+	$estado = mysqli_real_escape_string($link, $_POST['estado']);
+
+	$semana = $_POST['semana'];
+	$check = implode(",",$semana);
+
+	$horaInicio = $_POST['inicio'];
+	$checkInicio = implode(",",$horaInicio);
+
+	$horaFim = $_POST['fim'];
+	$checkFim = implode(",",$horaFim);
+
+    $servico = mysqli_real_escape_string($link, $_POST['servico']);
+
+   
+
+    $cadastrar = false;
 
 //variáveis com arquivos do upload
 $capa = $_FILES['capa'] ['name'];
@@ -19,7 +41,8 @@ $perfil = $_FILES['perfil'] ['name'];
 $perfil_tipo = $_FILES['perfil']['type'];
 
 //verificar se é possível cadastrar
-if($nome != "" && $sobrenome != "" && $atividade !="" && $email !="" && $senha !="" && $dica !="" && $telefone !="" && $endereco !="" && $capa !="" && $perfil !=""){
+if($nome != "" && $sobrenome != "" && $atividade !="" && $email !="" && $senha !="" &&  
+$telefone !="" && $cep !="" && $endereco !="" && $bairro !="" && $capa !="" && $perfil !=""){
    $cadastrar = true;    
 }else{
     echo "Não pode deixar os campos vazios<br>";
@@ -61,8 +84,12 @@ echo "Tipo de arquivo da perfil:" .$perfil_tipo."<br>";
 
 //nome da variáveis para ser inserido no banco de dado
 if($cadastrar){
-    $sql = "INSERT into tb_user(nome, sobrenome, atividade, email, senha, dica, telefone, endereco, perfil, capa) VALUES 
-    ('$nome','$sobrenome','$atividade','$email','$senha','$dica','$telefone','$endereco','$perfil','$capa');";
+    $sql = "INSERT into tb_user(nome, sobrenome, email, senha, numero,capa, perfil, atividade, telefone,
+    cep, endereco, bairro, cidade, estado, semana,	servico, inicio, fim ) 
+    VALUES  ('$nome','$sobrenome','$email','$senha','$numero','$capa','$perfil','$atividade','$telefone',
+		'$cep','$endereco','$bairro','$cidade','$estado','$check', '$servico','$checkInicio','$checkFim')";
+
+
     mysqli_query($link,$sql); 
     //echo "<a href='perfil.php'>Ir para a tela de login</a><br>";
     //serve para cadastrar os dados do formulario no banco de dado

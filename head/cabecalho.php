@@ -23,7 +23,7 @@
       <div class="text-end">
       <a href="login.php"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
       <a href="cadastre.php"><button type="button" class="btn btn-primary me-2">Empresa</button></a>
-      <a href="#############"><button type="button" class="btn btn-primary">Cliente</button></a>
+      <a href="clientes/cadastro_clientes.php"><button type="button" class="btn btn-primary">Cliente</button></a>
       </div>
     </div>
   </div>
