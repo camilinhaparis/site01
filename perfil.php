@@ -56,7 +56,7 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
 <br>
 <br>
 
-<script src="https://accounts.google.com/gsi/client" async defer></script>
+<!--<script src="https://accounts.google.com/gsi/client" async defer></script>
       <div id="g_id_onload"
          data-client_id="443636915036-6ttpu8h2kv1pmn68e56qoebuj83orh26.apps.googleusercontent.com"
          data-login_uri="http://localhost/site01/cadastre.php"
@@ -70,6 +70,8 @@ if(isset($_SESSION["login_user"]) && isset($_SESSION["senha_user"])){
          data-shape="rectangular"
          data-logo_alignment="left">
       </div>
+
+      --->
 
 
     <p class=" mb-3 text-muted">Ainda não é inscrito <a href="cadastre.php"><b>Cadastre-se!</b></a></p>
