@@ -9,7 +9,7 @@
             <li class="nav-item"><a href="sobre.php" class="nav-link px-2 text-muted">Sobre</a></li>
             <li class="nav-item"><a href="ajuda.php" class="nav-link px-2 text-muted">Ajuda</a></li>            
           </ul>
-          <p class="text-center text-muted">&copy; 2021–2022 Ajudaí | Todos os direitos reservados. Construido por <a href="#">Camila Parise</a>.</p>
+          <p class="text-center text-muted">&copy; 2021–2022 Ajudaí | Todos os direitos reservados. Construido por <a href="https://github.com/camilinhaparis">Camila Parise</a>.</p>
     </div> 
     
 </footer>

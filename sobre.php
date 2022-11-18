@@ -22,10 +22,11 @@
 	<p class="lead text-muted ">Você é um encanador, eletrecista, carpinteiro...</p>
 	
 </div>
-	
+     
+      
 <div >
 <section >    
-		<embed src="video/video.mp4" autoplay="false" height="577" width="1024" 
+		<embed src="video/video.mp4" autoplay="false" height="380" width="676" 
           style="display: block; margin: 0 auto;" /> 
 	</section>
 </div>
